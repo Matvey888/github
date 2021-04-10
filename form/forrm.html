@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="form.css">
   <title>forma</title>
 </head>
 <body>
@@ -20,18 +20,18 @@
         <input type="tel" id="tel" class="phones" placeholder="Телефон(ы)" required>
       </label>
       <label for="mail" class="mail">
-        <input type="email" name="mail" id="mail" class="mail-input" required>
+        <input type="email" name="mail" id="mail" class="mail-input" placeholder="Электронная почта" required>
       </label>
       <label for="photos" class="photos">
-        <span>Ваши фотографии</span>
+        <span>Ваши фотографии</span><br>
         <input type="file" id="photos" name="photos" class="photos-input" required>
       </label>
       <div class="panel-hidden">
         <div class="dop-field">
           <h4>
-            <a href="#" class="dop-btn">
+            <button class="dop-btn">
             Дополнительные поля
-            </a>
+            </button>
           </h4>
           <span>(не обязательно)</span>
         </div>
@@ -112,7 +112,7 @@
 
       <p class="required-field"> <span>*</span> - обязательные поля</p>
 
-      <button type="submit" class="form-btn"></button>
+      <button type="submit" class="form-btn">Отправить анкету</button>
       <p>Если у вас возникли трудности с заполнением анкеты или есть вопросы – звоните!
       </p>
     </form>
