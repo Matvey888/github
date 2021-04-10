@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>forma</title>
+</head>
+<body>
+  <div class="container">
+    <h2 class="title">
+      Заполлните анкету
+    </h2>
+    <form action="/anketa/" method="post" enctype="multipart/form-data" class="anketa">
+      <label for="name" class="name">
+        <input type="text" id="name" class="name-input" placeholder="Имя" required>
+      </label>
+      <label for="tel" class="phones">
+        <input type="tel" id="tel" class="phones" placeholder="Телефон(ы)" required>
+      </label>
+      <label for="mail" class="mail">
+        <input type="email" name="mail" id="mail" class="mail-input" required>
+      </label>
+      <label for="photos" class="photos">
+        <span>Ваши фотографии</span>
+        <input type="file" id="photos" name="photos" class="photos-input" required>
+      </label>
+      <div class="panel-hidden">
+        <div class="dop-field">
+          <h4>
+            <a href="#" class="dop-btn">
+            Дополнительные поля
+            </a>
+          </h4>
+          <span>(не обязательно)</span>
+        </div>
+        <div class="personal-data">
+          <p class="text-dop-field">
+            Подробная анкета займёт немного времени, но значительно увеличит ваши шансы.
+          </p>
+          <h4>Персональные данные</h4>
+          <label for="surname" class="surname">
+            <input type="text" id="surname" class="surname" placeholder="Фамилия">
+          </label>
+          <label for="patronynic" class="patronynic">
+            <input type="text" id="patronynic" class="patronymic-input" placeholder="Отчество">
+          </label>
+          <label for="birthday" class="birthday">
+            <input type="date" id="birthday" class="birthday-input" placeholder="День рождения">
+          </label>
+          <label for="city" class="city">
+            <input type="text" id="city" class="city-input" placeholder="Город проживания">
+          </label>
+          <h4>Контактные данные</h4>
+          <label for="skype" class="skype">
+            <input type="text" id="skype" class="skype-input" placeholder="Skype">
+          </label>
+          <h4>Внешние данные</h4>
+          <label for="height" class="height">
+            <input type="text" id="height" class="height-input" placeholder="Рост">
+          </label>
+          <label for="mass" class="mass">
+            <input type="text" id="mass" class="mass-input" placeholder="Вес">
+          </label>
+          <label for="bust" class="bust-size">
+            <input type="text" id="bust" class="bust-size-input" placeholder="Размер груди (№)">
+          </label>
+          <label for="chest" class="chest">
+            <input type="text" id="chest" class="chest-input" placeholder="Грудь">
+          </label>
+          <label for="weist" class="weist">
+            <input type="text" id="weist" class="weist-input" placeholder="Талия">
+          </label>
+          <label for="hips" class="hips">
+            <input type="text" id="hips" class="hips-input" placeholder="Бедра">
+          </label>
+          <div class="aboard">
+            <h4>Выезд за границу</h4>
+            <label for="passport" class="aboard-passport">
+              <input type="radio" name="passport" id="passport">
+              <span>Есть</span>
+            </label>
+            <label for="passport-no" class="aboard-passport">
+              <input type="radio" name="passport" id="passport-no">
+              <span>Нет</span>
+            </label>
+            <label for="visa" class="visa">
+              <input type="text" id="visa" class="visa-input" placeholder="Действующие визы">
+            </label>
+            <label for="language" class="language">
+              <input type="text" id="language" class="language-input" placeholder="Иностранные языки">
+            </label>
+          </div>
+          <div class="you-comments">
+            <h4>Ваши комментарии</h4>
+            <p>Переезд в Москву</p>
+            <label for="moving" class="moving">
+              <input type="radio" name="passport" id="moving" class="moving-input">
+              <span>Да</span>
+            </label>
+            <label for="moving-no" class="moving-no">
+              <input type="radio" name="moving" id="moving-no">
+              <span>Нет</span>
+            </label>
+            <label for="about-you"></label>
+            <textarea name="about-you" id="about-you" cols="30" rows="10" class="about-you-input"></textarea>
+          </div>
+        </div>
+      </div>
+
+
+      <p class="required-field"> <span>*</span> - обязательные поля</p>
+
+      <button type="submit" class="form-btn"></button>
+      <p>Если у вас возникли трудности с заполнением анкеты или есть вопросы – звоните!
+      </p>
+    </form>
+
+  </div>
+  <script src="form.js"></script>
+</body>
+</html>
