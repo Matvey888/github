@@ -17,7 +17,7 @@
         <input type="text" id="name" class="name-input" placeholder="Имя" required>
       </label>
       <label for="tel" class="phones">
-        <input type="tel" id="tel" class="phones" placeholder="Телефон(ы)" required>
+        <input type="tel" id="tel" class="phones-input" placeholder="Телефон(ы)" required>
       </label>
       <label for="mail" class="mail">
         <input type="email" name="mail" id="mail" class="mail-input" placeholder="Электронная почта" required>
@@ -29,11 +29,11 @@
       <div class="panel-hidden">
         <div class="dop-field">
           <h4>
-            <button class="dop-btn">
-            Дополнительные поля
+            <button type="button" class="dop-btn">
+            Дополнительная информация
+            <span>(не обязательно)</span>
             </button>
           </h4>
-          <span>(не обязательно)</span>
         </div>
         <div class="personal-data">
           <p class="text-dop-field">
@@ -95,16 +95,19 @@
           <div class="you-comments">
             <h4>Ваши комментарии</h4>
             <p>Переезд в Москву</p>
-            <label for="moving" class="moving">
-              <input type="radio" name="passport" id="moving" class="moving-input">
-              <span>Да</span>
-            </label>
-            <label for="moving-no" class="moving-no">
-              <input type="radio" name="moving" id="moving-no">
-              <span>Нет</span>
-            </label>
+            <div class="moving-container">
+              <label for="moving" class="moving">
+                <input type="radio" name="passport" id="moving" class="moving-input">
+                <span>Да</span>
+              </label>
+              <label for="moving-no" class="moving-no">
+                <input type="radio" name="moving" id="moving-no">
+                <span>Нет</span>
+              </label>
+            </div>
+
             <label for="about-you"></label>
-            <textarea name="about-you" id="about-you" cols="30" rows="10" class="about-you-input"></textarea>
+            <textarea name="about-you" id="about-you" cols="40" rows="10" class="about-you-input"></textarea>
           </div>
         </div>
       </div>
